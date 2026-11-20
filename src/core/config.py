@@ -120,6 +120,8 @@ def blue_client_kwargs() -> dict:
             os.environ.get("OPENROUTER_BASE_URL", OPENROUTER_BASE_URL).strip()
             or OPENROUTER_BASE_URL
         ),
+        "timeout": 3.0,
+        "max_retries": 0,
     }
 
 
